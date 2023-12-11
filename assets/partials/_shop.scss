@@ -1,0 +1,111 @@
+.shop {
+    width: 50%;
+    height: 100vh;
+
+    h1 {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.8);
+    }
+
+    .items {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 290px;
+        gap: 20px;
+
+        .item {
+            width: 210px;
+            height: 290px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 1px 11px 1px rgba(0, 0, 0, 0.1);
+            justify-content: space-between;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            i {
+                color: rgba(0, 0, 0, 0.15);
+                position: relative;
+                left: 80px;
+                top: 15px;
+                transition: all 0.3s ease-in-out;
+            }
+
+            i:hover {
+                color: red;
+                cursor: pointer;
+            }
+
+            .content {
+                width: 200px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .imgborder {
+                    height: 130px;
+                    width: 130px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-left: 1px solid rgba(0, 0, 0, 0.02);
+                    border-right: 1px solid rgba(0, 0, 0, 0.02);
+                    border-top: 1px solid rgba(0, 0, 0, 0.04);
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+                    border-radius: 50%;
+                }
+
+                img {
+                    max-height: 110px;
+                    width: 110px;
+                    padding: 20px;
+                }
+
+                h2 {
+                    margin-top: 10px;
+                    font-size: 15px;
+                }
+
+                p {
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: rgba(0, 0, 0, 0.4);
+                    margin-top: 10px;
+                }
+            }
+
+            button {
+                height: 50px;
+
+                width: 100%;
+                border-top: 1px solid rgba(0, 0, 0, 0.04);
+                background-color: white;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                font-size: 14px;
+                color: rgba(0, 0, 0, 0.6);
+                cursor: pointer;
+                font-weight: 600;
+                transition: all 0.3s ease-in-out;
+            }
+
+            button:hover {
+                background-color: rgb(0, 53, 199);
+                opacity: 0.7;
+                color: white;
+            }
+        }
+
+        .item:hover {
+            transform: scale(1.03);
+        }
+    }
+}

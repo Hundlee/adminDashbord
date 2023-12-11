@@ -1,0 +1,68 @@
+.slide {
+    max-width: 900px;
+    max-height: 30vh;
+
+    .swiper {
+        width: 900px;
+        height: 280px;
+        border-radius: 10px;
+    }
+
+    .swiper-slide img {
+        width: 910px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 40px;
+        height: 40px;
+        border-width: 2px;
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        font-size: 20px;
+        color: #fff;
+        font-weight: 900;
+        border-color: #fff;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: #fff;
+    }
+
+    /* Opcional: Personalize a cor das bolinhas ativas */
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background-color: #fff;
+        box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+    }
+
+    .swiper-pagination-bullet {
+        width: 7px;
+        height: 7px;
+        margin: 0 5px;
+    }
+
+    .description-slide {
+        position: absolute;
+        z-index: 2;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        padding: 20px;
+        border-radius: 00px 10px 0px 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: initial;
+
+        h1 {
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+}

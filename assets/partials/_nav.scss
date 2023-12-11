@@ -1,0 +1,101 @@
+nav {
+    height: 100vh;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid rgba(0, 0, 0, 0.06);
+
+    .nav-items ul {
+        width: 100%;
+    }
+
+    .menu:nth-child(2) {
+        margin-top: 60px;
+    }
+
+    .nav-items ul li {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .nav-items .menu .item {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    }
+
+    .nav-items ul li a {
+        font-size: 13px;
+        font-weight: 600;
+        color: rgb(114, 124, 133);
+        opacity: 0.8;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        line-height: 60px;
+        padding: 0px 30px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-items ul li a:hover {
+        color: rgba(3, 18, 58, 1);
+        opacity: 1;
+    }
+
+    .nav-items ul li a:hover {
+        box-shadow: inset 0px 30px 30px -30px rgba(64, 92, 158, 0.3);
+    }
+
+    .nav-items ul li a i {
+        color: rgba(3, 18, 58, 0.3);
+        font-weight: 600;
+        padding: 0px 20px 00px 00px;
+        font-size: 22px;
+    }
+
+    .nav-items ul li a span {
+        color: rgba(3, 18, 58, 0.3);
+        margin-left: auto;
+    }
+
+    .nav-items .menu .item a .dropdown {
+        position: absolute;
+        right: 0;
+        margin: 20px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .nav-items .menu .item .sub-menu {
+        display: none;
+    }
+
+    .nav-items .menu .item .sub-menu a {
+        padding-left: 80px;
+    }
+
+    .btn-nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-top: 700px;
+    }
+
+    .btn-nav button {
+        padding: 15px 70px;
+        color: white;
+
+        font-weight: 500;
+        background-color: rgb(0, 53, 199);
+        opacity: 0.7;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .btn-nav button:hover {
+        opacity: 1;
+        box-shadow: 0px 2px 21px 2px rgba(64, 92, 158, 0.3);
+    }
+}

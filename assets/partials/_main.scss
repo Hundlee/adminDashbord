@@ -1,0 +1,116 @@
+main {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+
+    .main-center {
+        width: 100%;
+        height: 130vh;
+        overflow: hidden;
+        background: rgba(176, 183, 198, 0.15);
+        display: flex;
+        justify-content: center;
+    }
+
+    .mid-center {
+        display: flex;
+
+        .right-mid-center {
+            margin-left: 50px;
+        }
+    }
+
+    .mid-center-top {
+        width: 1400px;
+        height: 130px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        background: linear-gradient(
+            98deg,
+            rgba(186, 151, 20, 0.5) 0%,
+            rgba(187, 19, 189, 0.7) 46%,
+            rgba(20, 68, 171, 0.8) 100%
+        );
+        border-radius: 10px;
+    }
+
+    .left {
+        display: flex;
+        align-items: center;
+    }
+
+    .left img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        margin-left: 30px;
+        cursor: pointer;
+    }
+
+    .left .content {
+        color: white;
+        margin-left: 20px;
+    }
+
+    .left .content h1 {
+        font-size: 22px;
+        font-weight: 500;
+        user-select: none;
+    }
+
+    .left .content p {
+        margin-top: 10px;
+        font-size: 14px;
+        user-select: none;
+    }
+
+    .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right .content {
+        height: 75px;
+        width: 180px;
+        background-color: rgba(0, 0, 0, 0.2);
+        display: flex;
+        margin-right: 21px;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .right .content:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .right .content i {
+        font-size: 35px;
+        color: white;
+        opacity: 0.2;
+        margin-left: 10px;
+    }
+
+    .right .content .content-right {
+        color: white;
+        text-align: end;
+        margin-right: 10px;
+
+        h2 {
+            font-size: 17px;
+            font-weight: 500;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 14px;
+            margin-top: 8px;
+        }
+    }
+}
